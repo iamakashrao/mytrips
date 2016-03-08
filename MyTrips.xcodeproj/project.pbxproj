@@ -13,6 +13,8 @@
 		F0BB3DA01C8E9E95004FD00A /* MyTrips.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F0BB3D9E1C8E9E95004FD00A /* MyTrips.xcdatamodeld */; };
 		F0BB3DA21C8E9E95004FD00A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0BB3DA11C8E9E95004FD00A /* Assets.xcassets */; };
 		F0BB3DA51C8E9E95004FD00A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0BB3DA31C8E9E95004FD00A /* LaunchScreen.storyboard */; };
+		F0BB3DAD1C8E9EC7004FD00A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BB3DAC1C8E9EC7004FD00A /* MapKit.framework */; };
+		F0BB3DAF1C8EA10A004FD00A /* MapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BB3DAE1C8EA10A004FD00A /* MapTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F0BB3DA11C8E9E95004FD00A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0BB3DA41C8E9E95004FD00A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0BB3DA61C8E9E95004FD00A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0BB3DAC1C8E9EC7004FD00A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F0BB3DAE1C8EA10A004FD00A /* MapTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0BB3DAD1C8E9EC7004FD00A /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 		F0BB3D8B1C8E9E95004FD00A = {
 			isa = PBXGroup;
 			children = (
+				F0BB3DAC1C8E9EC7004FD00A /* MapKit.framework */,
 				F0BB3D961C8E9E95004FD00A /* MyTrips */,
 				F0BB3D951C8E9E95004FD00A /* Products */,
 			);
@@ -63,6 +69,7 @@
 				F0BB3DA31C8E9E95004FD00A /* LaunchScreen.storyboard */,
 				F0BB3DA61C8E9E95004FD00A /* Info.plist */,
 				F0BB3D9E1C8E9E95004FD00A /* MyTrips.xcdatamodeld */,
+				F0BB3DAE1C8EA10A004FD00A /* MapTableViewCell.swift */,
 			);
 			path = MyTrips;
 			sourceTree = "<group>";
@@ -140,6 +147,7 @@
 			files = (
 				F0BB3D9A1C8E9E95004FD00A /* ViewController.swift in Sources */,
 				F0BB3D981C8E9E95004FD00A /* AppDelegate.swift in Sources */,
+				F0BB3DAF1C8EA10A004FD00A /* MapTableViewCell.swift in Sources */,
 				F0BB3DA01C8E9E95004FD00A /* MyTrips.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +263,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MyTectra.MyTrips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -266,6 +275,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MyTectra.MyTrips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
